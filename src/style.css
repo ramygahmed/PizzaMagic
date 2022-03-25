@@ -1,0 +1,370 @@
+@import url("https://use.typekit.net/idd0mgr.css");
+@media screen and (min-width: 736px) {
+    .navDropDownMenu {
+      display:none;
+    }
+    
+  }
+@media screen and (max-width: 735px) {
+    .nav-item,.account {
+      display:none;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo{
+        display:none;
+    }
+    #container{
+        grid-template: 1fr/ 1fr 3fr;
+    }
+    .gradientBlack{
+        display: none;
+    }
+    .home{
+        align-self: center;
+    }
+    .homeMain{
+        font-size: 4vw !important;
+    }
+    .homeMainBtns{
+        display: none;
+    }
+    .homeLogo{
+        display: block;
+    }
+  }
+  @media screen and (max-width: 885px) {
+    
+
+  }
+:root{
+    --secondary-color: #201e21;
+    --primary-color: #d7b79a;
+}
+*{
+    box-sizing:border-box;
+    font-family: amboy-black, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    background-image: url(./img/HomeBanner.png);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr 5fr/1fr;
+    background-repeat:space;
+    background-size: cover;
+}
+.logo{
+    background-image: url(./img/logo.png);
+    position: relative;
+    
+    top: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+}
+.homeLogo{
+    display:none;
+    background-image: url(./img/logo.png);
+    position: relative;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 250px;
+}
+nav{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+nav>div{
+    color: white;
+    display: inline-block;
+   
+}
+.account{
+    color: var(--secondary-color);
+    background-color: white;
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    align-self: center;
+    font-size: 20px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.account:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+.nav-item{
+    color: var(--primary-color);
+    align-self: center;
+    font-size: 20px;
+    position:relative;
+    transition: all 1s ease;
+}
+
+.navDropDownMenu{
+    position:relative;
+    color: white;
+}
+.ndd{
+    color: var(--primary-color);
+    padding: 10px;
+    font-size: 36px !important;
+    transition: all 1s ease;
+}
+.ndd:hover{
+    color:white;
+}
+.ndd:hover::after{
+    width: 50px;
+    background-color: white;
+}
+.ndd::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 30px;
+    height: 10px;
+    background-color:var(--primary-color);  
+    transition: all 1s ease;
+}
+.nav-item:hover{
+    color: white;
+}
+.nav-item::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 30px;
+    height: 10px;
+    background-color:var(--primary-color);  
+    transition: all 1s ease;
+}
+.nav-item:hover::after{
+    width: 50px;
+    background-color: white;
+}
+.gradientBlack{
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 37%, rgba(247,247,247,0) 100%);
+    width: 100%;
+    height: 30vh;
+}
+.home{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+.homeMain{
+    color: var(--secondary-color);
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    font-size: 4vw;
+    padding: 20px;
+}
+.homeMainBtns{
+    color: var(--primary-color);
+ 
+}
+.homeMainBtns p{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    width: auto;
+}
+.homeMainBtns p:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.menuPizza>div{
+    display: block;
+    padding: 5px;
+}
+.menuPizza>div>h4{
+    display: inline;
+    font-size: larger;
+    color: var(--primary-color)
+}
+.makePizza{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menuMain{
+    color: white;
+    background-color: var(--primary-color);
+    width: 70%;
+    padding: 10px;
+    font-size: 3vw;
+    text-align: center;
+    margin: 70px auto 30px auto;
+}
+.makePizza > div{
+    color: white;
+    background-color: var(--secondary-color);
+    width: 20vw;
+    height: 22vh;
+}
+.makePizza > div > h3{
+    font-size: 2.5vw;
+    margin: 10px;
+}
+.makePizza > div p{
+    display: inline;
+    margin: 10px;
+    text-shadow: none;
+}
+.makePizza > div p:hover{
+    text-shadow:
+     3px  3px 0 var(--primary-color),
+    -1px -1px 0 var(--primary-color),  
+     1px -1px 0 var(--primary-color),
+    -1px  1px 0 var(--primary-color),
+     1px  1px 0 var(--primary-color);
+}
+
+.menuPrice{
+    height:min-content !important;
+    align-self: center;
+    font-size: 4vw;
+    padding: 20px;
+    text-align: center;
+}
+.menuBase>p, .menuToppings>p{
+    display: inline-block !important;
+}
+.form{
+    display: grid;
+    width: 75vw;
+    margin:10vh auto;
+    padding: 10px;
+    background-color: var(--primary-color);
+    grid-template: 1fr 3fr/1fr 1fr;
+    grid-template-areas: 
+    'name       email'
+    'message    message'
+    ;
+}
+#nameInput{
+    grid-area: name;
+}
+#emailInput{
+    grid-area: email;
+}
+#messageInput{
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;   
+    grid-area: message;
+}
+.callUs,.locText{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+.location{
+    width: 30vw;
+    margin: auto;
+}
+
+.OurStory{
+    padding: 20px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    grid-template-areas: 
+    's01    s02'
+    's01    s03'
+    's01    s04'
+    ;
+}
+.s01,.s02,.s03,.s04{
+    font-size: max(12px,1.5vw);
+    line-height: 4.5vh;
+    padding: 10px;
+    width: 30vw;
+    margin-bottom: 10px;
+
+}
+.s02,.s03,.s04{
+    color: white;
+}
+.s01{
+    background-color: var(--primary-color);
+    grid-area: s01;
+    justify-self:center;
+    align-self: center;
+}
+.s02{
+    background-color: var(--secondary-color);
+    grid-area: s02;
+    justify-self: start;
+}
+.s03{
+    background-color: var(--secondary-color);
+    grid-area: s03;
+    justify-self: right;
+}
+.s04{
+    background-color: var(--secondary-color);
+    grid-area: s04;
+}
+.accountPage{
+   display: grid; 
+   grid-template: 1fr/1fr 3fr;
+   grid-template-areas: 
+   'profilePic  accountDetails'
+   ;
+}
+.profilePic{
+    background-image: url(./img/profilePic.png);
+    width: 15vw;
+    height: 15vw;
+    justify-self: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: profilePic;
+}
+.accountDetails{
+    color: var(--primary-color);
+    grid-area: accountDetails;
+    padding: 20px;
+    background-color: white;
+    font-size: 2vw;
+    width: 50%;
+    height: 90%;
+    justify-self: center;
+}
+.accountDetails span{
+    color: var(--secondary-color)
+}
